@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Digital Mare Header Clone</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+            
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .main-header {
+            background-color:white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom: 1px solid gray;
+        }
+
+        
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 20px;
+           
+        }
+        .certifications{
+            position: relative;
+            left: 150px;
+        }
+
+        .certifications img {
+            height: 35px;
+            margin-right: 15px;
+            width: 150px;
+            
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #ff6600;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
+        }
+
+        .contact-info a {
+            color: #ff6600;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+        }
+        .logo{
+            position: relative;
+            left:200px
+        }
+
+        .logo img {
+            height: 70px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #141414;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            
+        }
+
+        
+
+        
+        
+        .navbar img{
+           
+            height: 30px;
+            object-fit: cover;
+            gap: 20px;
+        }
+        .navbar{
+            position: relative;
+            right: 150px;
+           
+        }
+        .head{
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            right: 10px;
+            
+        }
+        .contact-info img{
+            width: 35px;
+        }
+        .amma{
+            position: relative;
+            bottom: 12px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .head:hover{
+            color: #ff6600;
+        }
+        #home{
+            color: #ff6600;
+        }
+        
+        .sidenav{
+            width: 500px;
+            height: 500px;
+           
+            
+        }
+        .side .facebook{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: blue;
+            color: white;
+            text-align: center; 
+            transition: width 0.3s ease;    
+        }
+        .side .insta{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color:red;
+            color: white;
+            text-align: center;   
+            transition: width 0.3s ease;  
+        }
+        .side .twitter{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: skyblue;
+            color: white;
+            text-align: center;   
+            transition: width 0.3s ease;  
+        }
+        .side .linked{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: orange;
+            color: white;
+            text-align: center;  
+            transition: width 0.3s ease;   
+        }
+        .side .youtube{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            text-align: center;  
+            transition: width 0.3s ease;   
+        }
+        .side .print{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            text-align: center;  
+            transition: width 0.3s ease;   
+        }
+       
+       
+       
+        
+        
+        
+        .gold{
+            position: relative;
+            top: 7px;
+            color: white;
+        }
+        .photo{
+            position: relative;
+            left: 120px;
+            bottom: 150px;
+        }
+        .side{
+            position: relative;
+            top: 150px;
+        }
+        .fa-facebook{
+            background-color: blue;
+            color: white;
+        }
+        .fa-instagram{
+            color: white;
+            
+        }
+        .side li:hover{
+            width: 50px;
+        }
+        .iag h1 {
+            font-size: 46px;
+            color: #ff9933;
+            margin-top: 10px;
+            position: relative;
+            bottom: 100px;
+            left: 100px;
+        }
+
+        .iag h1 span {
+            color: #138808;
+        }
+        .award-images{
+            display: flex;
+            width: 100%;
+            
+            
+        }   
+         
+        
+       /* .award-slide{
+            position: relative;
+            left: 550px;
+            object-fit: cover;
+            bottom: 570px;
+            width: 1100px;
+            animation: slider 16s infinite;
+         }*/
+         .container{
+            width: 135vh;
+            position: absolute;
+           
+            top: 150px;
+            left: 550px;
+           
+            overflow: hidden;
+
+
+         }
+         .wrapper{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            animation: slider 16s infinite;
+           
+            
+         }
+         @keyframes slider {
+            0%{
+                transform:translateX(0)
+            }
+            25%{
+                transform:translateX(0)
+            }
+            30%{
+                transform:translateX(-100%)
+            }
+            50%{
+                transform:translateX(-100%)
+            }
+            55%{
+                transform:translateX(-200%)
+            }
+            75%{
+                transform:translateX(-200%)
+            }
+            80%{
+                transform:translateX(-300%)
+            }
+            100%{
+                transform:translateX(-300%)
+            }
+            
+            
+         }
+        
+         
+        
+        
+         
+            
+            
+         
+
+
+
+
+      
+      
+
+    </style>
+</head>
+<body>
+
+    <div class="main-header">
+       
+        <div class="top-bar">
+            <div class="certifications">
+                <img src="pilli.webp" alt="Startup India">
+                <img src="anthom.webp" alt="MSME Certified">
+                <img src="isro.webp" alt="ISO Certified">
+            </div>
+            <div class="contact-info">
+                <a href="www.whatsapp.com"><img src="whatsapp.gif" alt=""> <i class="fa fa-phone amma" aria-hidden="true"> +91 99-121212-40</i></a>
+                <a href="www.gmail.com"><i class="fa fa-envelope amma" aria-hidden="true">contactus@mkdigitalmare.com</i></a>
+            </div>
+        </div>
+
+       
+        <header>
+            <div class="logo">
+                <a href="#"><img src="kukka.jpg" alt="MK Digital Mare Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active"><img src="home.gif" alt="" ></a><span class="head" id="home">Home</span></li>
+                    <li><a href="#" class="active"><img src="aboutus.gif" alt=""></a> </a><span class="head">AboutuS</span></li>
+                    <li><a href="#" class="active"><img src="services.gif" alt=""></a></a><span class="head">Our Servics</span></li>
+                    <li><a href="#" class="active"><img src="giphy.webp" alt=""></a><span class="head">Products</span></li>
+                    <li><a href="#" class="active"><img src="contact.gif" alt=""></a><span class="head">Contact</span></li>
+                    <li><a href="#" class="active"><img src="more.gif" alt=""></a><span class="head">More</span></li>
+                    <li><a href="#" class="active"><img src="money.gif" alt=""></a><span class="head">Earn Money</span></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+   <div class="seconddiv">
+        <div class="sidenav">
+           <ul class="side">
+              <li class="facebook"><a href="#"><i class="fa-brands fa-facebook gold"></i></a></li>
+              <li class="insta"><a href="#"><i class="fa-brands fa-instagram gold"></i></a></li>
+              <li class="twitter"><a href="#"><i class="fa-brands fa-twitter gold"></i></a></li>
+              <li class="linked"><a href="#"><i class="fa-brands fa-linkedin gold"></i></a></li>
+              <li class="youtube"><a href="#"><i class="fa-brands fa-youtube gold"></i></a></li>
+              <li class="print"><a href="#"><i class="fa-brands fa-pinterest-p gold"></i></a></li>
+            </ul>
+         <div class="iag">
+            <img src="animated-lion1.gif" alt="" class="photo">
+            <h1>MAKE IN <span>INDIA</span></h1>
+         </div>
+               
+            
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <img src="3.webp" alt="" class="award-slide">
+                <img src="1.webp" alt="" class="award-slide">
+                <img src="2.webp" alt="" class="award-slide">
+                <img src="4.webp" alt="" class="award-slide">
+                
+               
+             </div>
+        </div>
+          
+         
+        
+       
+
+
+    </div>
+   
+
+
+   
+
+</body>
+</html>
